@@ -9,7 +9,7 @@
 /* Adjustments for iPads (768px to 1024px screens) */
 @media (min-width: 768px) and (max-width: 1024px) {
     .about-image {
-        transform: translateY(-250px); /* Adjust vertical alignment */
+        transform: translateY(-500); /* Adjust vertical alignment */
         width: 180px; /* Slightly smaller for iPads if needed */
         margin: 0 auto; /* Center the image */
     }
