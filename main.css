@@ -719,7 +719,7 @@ footer p {
 /* Additional tweaks for larger screens (PCs) */
 @media (min-width: 1025px) {
     .about-image {
-        transform: translateY(-20px); /* Further adjust vertical alignment for PC */
+        transform: translateY(-200px); /* Further adjust vertical alignment for PC */
         width: 220px; /* Slightly larger for bigger screens */
     }
 }
