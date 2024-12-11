@@ -1,3 +1,143 @@
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Viewport meta already added in HTML*/
+
+
+/* Ensure images and containers are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px; /* Limit max-width to keep layout consistent on large screens */
+    margin: 0 auto; /* Center container */
+}
+
+
+/* Flexbox for navigation */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+/* Flexbox for 'about' section */
+.about-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;  /* Allow the items to wrap on smaller screens */
+}
+
+.about-image {
+    flex: 1 1 40%; /* Makes the image flexible but not too large */
+    max-width: 100%;
+}
+
+.about-text {
+    flex: 1 1 50%; /* Allows the text section to grow or shrink */
+}
+
+/* Ensure sections have padding */
+.section {
+    padding: 20px;
+}
+
+
+
+/* For Tablets (Portrait) */
+@media (max-width: 768px) {
+    /* Stack navigation items vertically */
+    nav ul {
+        flex-direction: column;
+    }
+
+    /* Stack image and text in about section */
+    .about-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        flex-basis: 100%; /* Image takes full width */
+    }
+
+    .about-text {
+        flex-basis: 100%; /* Text takes full width */
+    }
+
+    /* Adjust the layout of achievements to fit better on tablets */
+    .achievements-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns on medium screens */
+        gap: 20px;
+    }
+
+    /* Ensure service boxes are stacked vertically */
+    .services-wrapper {
+        display: block;
+    }
+}
+
+/* For Mobile Devices (Portrait) */
+@media (max-width: 480px) {
+    /* Adjust font sizes for readability on small screens */
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2, h3 {
+        font-size: 1.2em;
+    }
+
+    /* Make image and text fill the screen */
+    .about-image {
+        width: 100%; /* Image takes full width */
+    }
+
+    .about-text {
+        font-size: 0.9em; /* Adjust text size for small screens */
+    }
+
+    /* Adjust contact form and footer for mobile */
+    form label {
+        font-size: 14px;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+
+
+
+
 /* Basic Reset */
 * {
     margin: 0;
