@@ -1,3 +1,46 @@
+/* Wrapper for achievements */
+.achievements-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap onto new lines */
+    justify-content: space-around; /* Space out the boxes */
+    gap: 20px; /* Space between boxes */
+}
+
+/* Style for each achievement box */
+.achievement-box {
+    background-color: #f4f4f4; /* Box background */
+    padding: 20px;
+    width: 22%; /* Adjust width for desktop, 4 boxes side by side */
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Adjust text and spacing within each box */
+.achievement-box p {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .achievements-wrapper {
+        flex-direction: column; /* Stack the boxes vertically on small screens */
+        align-items: center; /* Center align the boxes */
+    }
+
+    .achievement-box {
+        width: 80%; /* Make each box take up more space on mobile */
+        margin-bottom: 20px; /* Add spacing between stacked boxes */
+        padding: 15px; /* Reduce padding for compact look */
+    }
+
+    .achievement-box p {
+        font-size: 12px; /* Adjust font size for mobile */
+    }
+}
 
 /* Basic reset */
 * {
