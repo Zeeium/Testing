@@ -431,3 +431,41 @@ footer p {
     margin: 0;
 }
 
+/* Achievements Section */
+.achievements-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.achievements-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.achievement-box {
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-icon {
+    width: 80px; /* Customize the icon size */
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.achievement-box p {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #333;
+}
+
+.achievement-box p strong {
+    font-size: 1.1rem;
+    color: #007bff;
+}
